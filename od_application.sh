@@ -38,7 +38,7 @@ mkdir -p $DEPLOY_DIR
 
 
 mkdir -p ~/.ssh
-echo $SSH_PRIVATE_KEY > ~/.ssh/id_rsa
+echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
 chmod 400 ~/.ssh/id_rsa
 
 cat <<EOF> ~/.ssh/config
