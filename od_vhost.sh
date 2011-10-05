@@ -67,3 +67,5 @@ cat <<EOF> /etc/$apache/sites-available/$APPLICATION
 EOF
 
 ln -s /etc/$apache/sites-available/$APPLICATION /etc/$apache/sites-enabled/
+
+service apache2 restart
