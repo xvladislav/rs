@@ -20,18 +20,10 @@ DEPLOY_DATE=$(date "+%Y%m%d%H%M%S")
 
 CONTENT_DIR=/opt/$APPLICATION/releases
 CURRENT_DIR=/opt/$APPLICATION/current
-WORKING_DIR=$CONTENT_DIR/working
 DEPLOY_DIR=$CONTENT_DIR/$DEPLOY_DATE
 APPLICATION_YII_DIRECTORY=/opt/$APPLICATION/yii
 GIT_DOMAIN=`echo $APPLICATION_GIT_BRANCH | sed -e "s/[^/]*\/\/\([^@]*@\)\?\([^:/]*\).*/\2/"`
 
-
-## Find out about the old deploy directory
-if [ -e $WORKING_DIR ]; then
-  OLD_DEPLOY_DIR=$(readlink -n $WORKING_DIR)
-  OLD_DEPLOY_DATE=$(basename $OLD_DEPLOY_DIR)
-  [ "$OLD_DEPLOY_DIR" == "$CONTENT_DIR" ] && OLD_DEPLOY_DATE=$(basename $(readlink -n $CURRENT_DIR))
-fi
 
 
 ## General Preparation
