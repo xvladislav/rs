@@ -1,5 +1,3 @@
-## RightScripts for OD
-
 Repository contains specific Scripts for OD servers
 
 ## mongo_db.sh
