@@ -3,37 +3,37 @@ RightScripts for OD
 
 Repository contains specific Scripts for OD servers
 
-mongo_db.sh
------------
+# mongo_db.sh
+
 Installs MongoDB database
 
 
-rabbit_mq.sh
-------------
+# rabbit_mq.sh
+
 Installs rabbit-mq server.
 
 
-revision_control_systems.sh
----------------------------
+# revision_control_systems.sh
+
 Installs git and svn.
 
-$GIT_USERNAME  -- user name for git configuration
-$GIT_EMAIL  -- email for git configuration
+* $GIT_USERNAME  -- user name for git configuration
+* $GIT_EMAIL  -- email for git configuration
 
 
-od_application.sh
------------------
+# od_application.sh
+
 Initializes OD application
 
 
-$APPLICATION -- application name (will be created directory /opt/APPLICATION)
-$SSH_PRIVATE_KEY -- private ssh key for 'git' user
-$APPLICATION_GIT_BRANCH -- remote git branch where OD application is located
-$APPLICATION_YII_SVN_BRANCH -- remote svn branch where yii framework is located (for example: http://yii.googlecode.com/svn/trunk/framework) 
+* $APPLICATION -- application name (will be created directory /opt/APPLICATION)
+* $SSH_PRIVATE_KEY -- private ssh key for 'git' user
+* $APPLICATION_GIT_BRANCH -- remote git branch where OD application is located
+* $APPLICATION_YII_SVN_BRANCH -- remote svn branch where yii framework is located (for example: http://yii.googlecode.com/svn/trunk/framework) 
 
 
-od_vhost.sh
------------
+# od_vhost.sh
+
 Creates virtual hosts for OD
 
 $WEBSITE_DNS -- DNS name of the web site (i.e., www.mysite.com)
