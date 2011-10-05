@@ -1,19 +1,18 @@
-RightScripts for OD
-===================
+## RightScripts for OD
 
 Repository contains specific Scripts for OD servers
 
-# mongo_db.sh
+## mongo_db.sh
 
 Installs MongoDB database
 
 
-# rabbit_mq.sh
+## rabbit_mq.sh
 
 Installs rabbit-mq server.
 
 
-# revision_control_systems.sh
+## revision_control_systems.sh
 
 Installs git and svn.
 
@@ -21,7 +20,7 @@ Installs git and svn.
 * $GIT_EMAIL  -- email for git configuration
 
 
-# od_application.sh
+## od_application.sh
 
 Initializes OD application
 
@@ -32,10 +31,10 @@ Initializes OD application
 * $APPLICATION_YII_SVN_BRANCH -- remote svn branch where yii framework is located (for example: http://yii.googlecode.com/svn/trunk/framework) 
 
 
-# od_vhost.sh
+## od_vhost.sh
 
 Creates virtual hosts for OD
 
-$WEBSITE_DNS -- DNS name of the web site (i.e., www.mysite.com)
-$APPLICATION -- name of the user Application
-$ADMIN_EMAIL -- email address used for Apache ServerAdmin in the Vhost.
+* $WEBSITE_DNS -- DNS name of the web site (i.e., www.mysite.com)
+* $APPLICATION -- name of the user Application
+* $ADMIN_EMAIL -- email address used for Apache ServerAdmin in the Vhost.
