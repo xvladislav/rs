@@ -60,12 +60,15 @@ svn checkout $APPLICATION_YII_SVN_BRANCH $APPLICATION_YII_DIRECTORY
 
 # change file permissions
 cd $DEPLOY_DIR
+mkdir -p $DEPLOY_DIR/log
 chgrp www-data log
 chmod g+w log
 
+mkdir -p $DEPLOY_DIR/public/frontend/assets
 chgrp www-data public/frontend/assets
 chmod g+w public/frontend/assets
 
+mkdir -p $DEPLOY_DIR/public/backend/assets
 chgrp www-data public/backend/assets
 chmod g+w public/backend/assets
 
