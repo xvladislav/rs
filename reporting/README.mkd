@@ -1,0 +1,12 @@
+## Order to run scripts:
+
+Should be preinstalled following packages:
+	mysql, php, apache
+    apt-get install -y php5-dev unzip autoconf make libtool php-pear
+
+1. RS Install Apache, MySQL, PHP
+2. ../revision_control_systems.sh
+3. ../rabbit_mq.sh
+4. reporting_application.sh
+5. reporting_init_mysql_database.sh
+6. reporting_vhost.sh

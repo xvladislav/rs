@@ -1,0 +1,3 @@
+## Order to run scripts:
+
+1. recommendation_services.sh

@@ -1,0 +1,8 @@
+## Order to run scripts:
+
+1. RS Install Apache, MySQL, PHP
+2. ../revision_control_systems.sh
+3. ../mongo_db.sh
+4. ../rabbit_mq.sh
+5. od_application.sh
+6. od_vhost.sh

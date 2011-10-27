@@ -13,7 +13,7 @@ if test "$RS_REBOOT" = "true" ; then
   exit 0 
 fi
 
-apt-get install -y subversion git
+apt-get install -y subversion git-core
 
 git config --global user.name "$GIT_USERNAME"
 git config --global user.email "$GIT_EMAIL"
